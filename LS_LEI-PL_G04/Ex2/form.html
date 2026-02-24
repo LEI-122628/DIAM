@@ -1,67 +1,107 @@
 <html>
-  <body style="display: flex; flex-direction: column; align-items: center">
-    <header style="display: flex; justify-content: center; height: 100px">
-      <h1>First Event</h1>
-      <a
-        href="./homepage.html"
-        style="position: absolute; right: 15px; top: -12.5px"
-      >
-        <img
-          src="./stockLogo.png"
-          width="100px"
-          height="100px"
-          style="cursor: pointer"
-        />
+  <head>
+    <title>Exercise first event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="./homepage.html" class="logo-link">
+        <img src="./stockLogo.png" alt="Logo" />
       </a>
     </header>
-    <form
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      "
-    >
-      <div style="display: flex; flex-direction: column">
-        <label>Name </label>
-        <input type="text" style="width: 200px" />
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <label>Email </label>
-        <input type="email" style="width: 200px" />
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <label>Phone number </label>
-        <input type="text" style="width: 200px" />
-      </div>
 
-      <div>
-        <div>Event dates:</div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            margin-top: 5px;
-          "
-        >
-          <div style="display: flex">
-            <label> 01/01/2025 </label>
-            <input type="checkbox" name="dates" value="01/01/2025" />
+    <nav class="main-nav">
+      <h1 class="main-title">First Event</h1>
+      <a href="./homepage.html" class="link">Back to homepage</a>
+    </nav>
+    <div class="form-content">
+      <div class="form-left">
+        <form class="form-fields">
+          <div class="form-group">
+            <label class="form-label">Name </label>
+            <input type="text" class="form-input" />
           </div>
-
-          <div style="display: flex">
-            <label> 01/01/2026 </label>
-            <input type="checkbox" name="dates" value="01/01/2026" />
+          <div class="form-group">
+            <label class="form-label">Email </label>
+            <input type="email" class="form-input" />
           </div>
+          <div class="form-group">
+            <label class="form-label">Phone number</label>
+            <input type="text" class="form-input" />
+          </div>
+        </form>
 
-          <div style="display: flex">
-            <label> 01/01/2027 </label>
-            <input type="checkbox" name="dates" value="01/01/2027" />
+        <div class="form-bottom">
+          <div>
+            <div class="form-label">Event dates:</div>
+            <div class="dates-list">
+              <div class="date-row">
+                <label class="date-label"> 01/01/2025 </label>
+                <input type="checkbox" name="dates" value="01/01/2025" />
+              </div>
+
+              <div class="date-row">
+                <label class="date-label"> 01/01/2026 </label>
+                <input type="checkbox" name="dates" value="01/01/2026" />
+              </div>
+
+              <div class="date-row">
+                <label class="date-label"> 01/01/2027 </label>
+                <input type="checkbox" name="dates" value="01/01/2027" />
+              </div>
+            </div>
+          </div>
+          <a href="done.html"> <button class="btn">Submit</button></a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="reviews-panel">
+        <div class="reviews-title">Past reviews</div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card-text">Amazing event!</div>
+          <div class="review-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>
       </div>
-    </form>
-    <a href="done.html"> <button style="width: 60px">Submit</button></a>
+    </div>
   </body>
 </html>

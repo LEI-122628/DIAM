@@ -1,43 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Exercise first event</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <header class="main-header">
-      <h1>First Event</h1>
       <a href="./homepage.html" class="logo-link">
         <img src="./stockLogo.png" alt="Logo" />
       </a>
-      <a href="./form.html" class="btn">Register</a>
     </header>
 
     <nav class="main-nav">
-      
+      <h1 class="main-title">First Event</h1>
+      <a href="./form.html" class="link">Register now!</a>
     </nav>
 
     <div class="content-wrapper">
-      <section class="row">
-        <div class="column">
+      <div class="info-section">
+        <div class="info-block">
           <h3>Dates:</h3>
-          <ul class="square-list">
-            <li>01/01/2025</li>
-            <li>01/01/2026</li>
-            <li>01/01/2027</li>
-          </ul>
+          <div class="info-list">
+            <div>01/01/2025</div>
+            <div>|</div>
+            <div>01/01/2026</div>
+            <div>|</div>
+            <div>01/01/2027</div>
+          </div>
         </div>
-        <div class="column">
+        <div class="info-block">
           <h3>Previous events:</h3>
-          <ul class="square-list">
-            <li><a href="https://www.google.com">2022 event</a></li>
-            <li><a href="https://www.google.com">2023 event</a></li>
-            <li><a href="https://www.google.com">2024 event</a></li>
-          </ul>
+          <div class="info-list">
+            <a class="link" href="https://www.google.com">2022 event</a>
+            <div>|</div>
+            <a class="link" href="https://www.google.com">2023 event</a>
+            <div>|</div>
+            <a class="link" href="https://www.google.com">2024 event</a>
+          </div>
         </div>
-      </section>
+      </div>
 
       <section>
         <h3>About the event:</h3>
@@ -98,6 +100,5 @@
     <footer class="main-footer">
       <div>2026 All rights reserved @FirstEvent</div>
     </footer>
-
   </body>
 </html>

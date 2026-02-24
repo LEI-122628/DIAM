@@ -1,32 +1,26 @@
 <html>
+  <head>
+    <title>Exercise first event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
-    <header style="display: flex; justify-content: center; height: 100px">
-      <h1>First Event</h1>
-      <a
-        href="./homepage.html"
-        style="position: absolute; right: 15px; top: -12.5px"
-      >
-        <img
-          src="./stockLogo.png"
-          width="100px"
-          height="100px"
-          style="cursor: pointer"
-        />
+    <header class="main-header">
+      <a href="./homepage.html" class="logo-link">
+        <img src="./stockLogo.png" alt="Logo" />
       </a>
     </header>
 
-    <div
-      style="
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-      "
-    >
+    <nav class="main-nav">
+      <h1 class="main-title">First Event</h1>
+      <a href="./homepage.html" class="link">Back to homepage</a>
+    </nav>
+    
+
+    <div class="done-container">
       <h2>Registry complete!</h2>
       <a href="./homepage.html">
-        <button>Go back!</button>
+        <button class="btn">Go back!</button>
       </a>
     </div>
   </body>
