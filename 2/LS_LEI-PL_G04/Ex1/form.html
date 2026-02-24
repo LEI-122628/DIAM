@@ -1,0 +1,67 @@
+<html>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <header style="display: flex; justify-content: center; height: 100px">
+      <h1>First Event</h1>
+      <a
+        href="./homepage.html"
+        style="position: absolute; right: 15px; top: -12.5px"
+      >
+        <img
+          src="./stockLogo.png"
+          width="100px"
+          height="100px"
+          style="cursor: pointer"
+        />
+      </a>
+    </header>
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      "
+    >
+      <div style="display: flex; flex-direction: column">
+        <label>Name </label>
+        <input type="text" style="width: 200px" />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <label>Email </label>
+        <input type="email" style="width: 200px" />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <label>Phone number </label>
+        <input type="text" style="width: 200px" />
+      </div>
+
+      <div>
+        <div>Event dates:</div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 5px;
+          "
+        >
+          <div style="display: flex">
+            <label> 01/01/2025 </label>
+            <input type="checkbox" name="dates" value="01/01/2025" />
+          </div>
+
+          <div style="display: flex">
+            <label> 01/01/2026 </label>
+            <input type="checkbox" name="dates" value="01/01/2026" />
+          </div>
+
+          <div style="display: flex">
+            <label> 01/01/2027 </label>
+            <input type="checkbox" name="dates" value="01/01/2027" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <a href="done.html"> <button style="width: 60px">Submit</button></a>
+  </body>
+</html>
