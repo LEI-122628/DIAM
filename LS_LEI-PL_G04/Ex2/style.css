@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Faz com que o footer fique sempre no fundo */
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .content-wrapper {
@@ -207,12 +207,19 @@ td {
   flex-direction: column;
   width: 80%;
   height: 80px;
-  border: 1px solid black;
+  border: 1px solid rgb(50, 50, 50);
   flex-shrink: 0;
   min-height: fit-content;
 }
 
 .review-card-text {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.review-card-title {
+  font-size: 15px;
+  font-weight: bold;
   padding: 5px;
 }
 
@@ -229,8 +236,8 @@ td {
 
 /* RODAPÉ */
 .main-footer {
-  padding: 10px;
-  background-color: #333;
+  padding: 2px;
+  background-color: #333333bf;
   color: white;
   text-align: center;
 }
