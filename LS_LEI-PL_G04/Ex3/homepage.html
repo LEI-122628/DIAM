@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise first event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="./homepage.html" class="logo-link">
+        <img src="./stockLogo.png" alt="Logo" />
+      </a>
+    </header>
+
+    <nav class="main-nav">
+      <h1 class="main-title">First Event</h1>
+      <a href="./form.html" class="link">Register now!</a>
+    </nav>
+
+    <section class="slideshow-section" style="text-align: center; margin-bottom: 30px;">
+      <div style="position: relative; display: inline-block; width: 100%; max-width: 1000px;">
+        <img id="img-slide" src="slide1.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;">
+        <button onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 50%;">&#10094;</button>
+        <button onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 50%;">&#10095;</button>
+      </div>
+    </section>
+
+    <div id="countdown-container" style="background: #f4f4f4; padding: 20px; text-align: center; margin: 20px 0; border-radius: 8px; font-family: sans-serif;">
+      <h3 style="margin-bottom: 10px;">The event starts in:</h3>
+      <div id="counter" style="font-size: 1.5rem; font-weight: bold; color: #333;"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="info-section">
+        <div class="info-block">
+          <h3>Dates:</h3>
+          <div class="info-list">
+            <div>01/01/2025</div>
+            <div>|</div>
+            <div>01/01/2026</div>
+            <div>|</div>
+            <div>01/01/2027</div>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Previous events:</h3>
+          <div class="info-list">
+            <a class="link" href="https://www.google.com">2022 event</a>
+            <div>|</div>
+            <a class="link" href="https://www.google.com">2023 event</a>
+            <div>|</div>
+            <a class="link" href="https://www.google.com">2024 event</a>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h3>About the event:</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section class="table-section">
+        <h3>Timeline:</h3>
+        <table>
+          <tr>
+            <th>#</th>
+            <th>01/01/2025</th>
+            <th>01/01/2026</th>
+            <th>01/01/2027</th>
+          </tr>
+          <tr>
+            <td>09:00</td>
+            <td>Reception, introductions</td>
+            <td>Reception, introductions</td>
+            <td>Reception, introductions</td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+            <td>Workshop life and work</td>
+            <td>Workshop life and other things</td>
+            <td>Workshop no life</td>
+          </tr>
+          <tr>
+            <td>13:00</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>Speaker from edp</td>
+            <td>Speaker from nos</td>
+            <td>Speaker from meo</td>
+          </tr>
+          <tr>
+            <td>17:00</td>
+            <td>Goodbyes and next steps</td>
+            <td>Goodbyes and next steps</td>
+            <td>Goodbyes and next steps</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <footer class="main-footer">
+      <div>2026 All rights reserved @FirstEvent</div>
+    </footer>
+
+  <script src="scripts.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+    <meta charset="UTF-8"> <title>Buy Tickets - First Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+      <a href="./homepage.html" class="logo-link">
+        <img src="./stockLogo.png" alt="Logo">
+      </a>
+    </header>
+
+    <nav class="main-nav">
+      <h1 class="main-title">Ticket Shop</h1> <a href="./homepage.html" class="link">Go back</a>
+    </nav>
+
+    <div class="content-wrapper">
+      <div class="tickets-container">
+
+        <div class="ticket-card">
+          <span>One day ticket - 40€</span> <div class="controls">
+            <button class="btn-qty" onclick="changeQty('day', -1)">-</button>
+            <span id="qtd-dia">0</span>
+            <button class="btn-qty" onclick="changeQty('day', 1)">+</button>
+          </div>
+        </div>
+
+        <div class="ticket-card">
+          <span>Event Pass - 80€</span> <div class="controls">
+            <button class="btn-qty" onclick="changeQty('event', -1)">-</button>
+            <span id="qtd-evento">0</span>
+            <button class="btn-qty" onclick="changeQty('event', 1)">+</button>
+          </div>
+        </div>
+
+        <div class="ticket-card">
+          <span>Premium Pass - 100€</span> <div class="controls">
+            <button class="btn-qty" onclick="changeQty('premium', -1)">-</button>
+            <span id="qtd-premium">0</span>
+            <button class="btn-qty" onclick="changeQty('premium', 1)">+</button>
+          </div>
+        </div>
+
+        <hr>
+        <h3>Total: <span id="total-price">0</span>€</h3>
+        <button class="btn" onclick="finishPurchase()">Buy Now</button>
+
+        <p id="mensagem-sucesso"></p>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div>2026 All rights reserved @FirstEvent</div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
