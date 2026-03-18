@@ -1,0 +1,28 @@
+[
+    {
+        "name": "EDP",
+        "image": "/edp.png",
+        "description": "Empresa líder no setor energético.",
+        "participation": "15:00 | 01/01/2025"
+    },
+    {
+        "name": "Galp",
+        "image": "/Galp.png",
+        "description": "Empresa de energia e petróleo.",
+        "participation": "16:00 | 01/01/2025"
+    },
+    {
+        "name": "Meo",
+        "image": "/Meo.png",
+        "description": "Empresa de telecomunicações e serviços digitais.",
+        "participation": "17:00 | 01/01/2025"
+    },
+    {
+        "name": "Vodafone",
+        "image": "/Vodafone.png",
+        "description": "Empresa de telecomunicações global.",
+        "participation": "18:00 | 01/01/2025"
+    }
+    
+]
+
