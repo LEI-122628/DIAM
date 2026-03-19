@@ -7,6 +7,7 @@ import Timeline from './components/Timeline'
 import Footer from './components/Footer'
 import './App.css'
 import Gallery from './components/Gallery'
+import Survey from './components/Survey'
 
 function App() {
   return (
@@ -16,9 +17,11 @@ function App() {
       <Slideshow />
       <Countdown />
       <Gallery />
+      <Survey />
       <div className="content-wrapper">
         <About />
         <Timeline />
+        
       </div>
       <Footer />
     </>
