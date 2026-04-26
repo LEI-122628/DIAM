@@ -15,10 +15,12 @@ function VoteForm({ questao, onClose, onVoteSuccess }) {
     axios.put(`http://127.0.0.1:8000/api/opcoes/${selectedOpcao}/`, updatedOpcao)
       .then(() => {
         if (autor && comentario) {
-          axios.post(`http://127.0.0.1:8000/api/questoes/${questao.id}/comentarios/`, {
+          return axios.post(`http://127.0.0.1:8000/api/questoes/${questao.id}/comentarios/`, {
             questao: questao.id,
             autor: autor,
             texto: comentario
+          }).then(() => {
+            return axios.get(`http://127.0.0.1:8000/api/questoes/${questao.id}/`)
           })
         }
         return axios.get(`http://127.0.0.1:8000/api/questoes/${questao.id}/`)
