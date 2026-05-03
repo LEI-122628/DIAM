@@ -11,7 +11,9 @@ import Form from './components/Form'
 import HomePage from './components/Homepage'
 import QuestionTable from './components/QuestionTable'
 import NewQuestion from './components/NewQuestion'
-
+import VoteQuestion from './components/VoteQuestion'
+import DetailQuestion from './components/DetailQuestion'
+import NewOptionQuestion from './components/NewOptionQuestion'
 
 
 function App() {
@@ -26,8 +28,11 @@ function App() {
         <Route path="/survey-results" element={<SurveyResults />} />
         <Route path="/tickets" element={<Tickets />} />
         <Route path="/form" element={<Form />} />
-        <Route path="/questions" element={<QuestionTable />} />
+        <Route path="/questions" element={<QuestionTable />} /> 
         <Route path="/questions/new" element={<NewQuestion />} />
+        <Route path="/questions/:id" element={<DetailQuestion />} />
+        <Route path="/questions/:id/vote" element={<VoteQuestion />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
